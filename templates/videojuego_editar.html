@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Videojuego</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/static/stylemenu.css">
+</head>
+<body>
+
+    <div class="menu">
+        <ul class="menu-content">
+            <li><a href="/menu"><span class="material-symbols-outlined">home</span><span>Inicio</span></a></li>
+            <li><a href="/templates/videojuego_lista.html"><span class="material-symbols-outlined">dashboard</span><span>Videojuegos</span></a></li>
+            <li><a href="/generos/html"><span class="material-symbols-outlined">explore</span><span>Genero</span></a></li>
+            <li><a href="/editor/html"><span class="material-symbols-outlined">analytics</span><span>Editor</span></a></li>
+            <li><a href="/desarrollador/html"><span class="material-symbols-outlined">person</span><span>Desarrollador</span></a></li>
+            <li><a href="/plataforma/html"><span class="material-symbols-outlined">explore</span><span>Plataforma</span></a></li>
+            <li><a href="/logout"><span class="material-symbols-outlined">logout</span><span>Salir</span></a></li>
+        </ul>
+    </div>
+
+<div class="content">
+    <div class="form-box">
+        <h1>Crear Nuevo Videojuego</h1>
+            <div id="mensajeBox" class="mensaje-box" style="display:none;">
+            <span id="mensajeError" class="mensaje-error"></span>
+            <span id="mensajeExito" class="mensaje-exito"></span>
+            <button id="cerrarMensaje" class="cerrar-mensaje" aria-label="Cerrar mensaje">×</button>
+            </div>
+        <form id="crearVideojuegoForm">
+            <input type="text" id="id" name="id" readonly>
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo" required><br><br>
+
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+
+            <label for="genero_id">Género:</label><br>
+            <select id="genero_id" name="genero_id" required></select><br><br>
+
+            <label for="desarrollador_id">Desarrollador:</label><br>
+            <select id="desarrollador_id" name="desarrollador_id" required></select><br><br>
+
+            <label for="editor_id">Editor:</label><br>
+            <select id="editor_id" name="editor_id" required></select><br><br>
+
+            <label for="fecha_lanzamiento">Fecha de Lanzamiento:</label><br>
+            <input type="date" id="fecha_lanzamiento" name="fecha_lanzamiento" required><br><br>
+
+            <label for="precio">Precio:</label><br>
+            <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+
+            <label for="imagen_url">URL de Imagen:</label><br>
+            <input type="text" id="imagen_url" name="imagen_url"><br>
+            <div class="imagen-preview-container">
+            <img id="previewImagen" alt="Vista previa de la imagen">
+            </div>
+
+            <label for="created_at">Creado:</label>
+            <input type="text" id="created_at" readonly>
+            <label for="updated_at">Actualizado:</label>
+            <input type="text" id="updated_at" readonly>
+            <button type="submit">Guardar</button>         
+        </form>
+        <br>
+        
+    </div>
+    <a class="volverb" href="/templates/videojuego_lista.html">Volver</a>
+</div>
+<script src="/static/scriptVideojuego.js" defer></script>
+</body>
+</html>

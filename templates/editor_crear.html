@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Crear Editor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/stylemenu.css" />
+</head>
+<body>
+
+<div class="menu">
+    <ul class="menu-content">
+        <li><a href="/menu"><span class="material-symbols-outlined">home</span><span>Inicio</span></a></li>
+        <li><a href="/templates/videojuego_lista.html"><span class="material-symbols-outlined">dashboard</span><span>Videojuegos</span></a></li>
+        <li><a href="/generos/html"><span class="material-symbols-outlined">explore</span><span>Genero</span></a></li>
+        <li><a href="/editor/html"><span class="material-symbols-outlined">analytics</span><span>Editor</span></a></li>
+        <li><a href="/desarrollador/html"><span class="material-symbols-outlined">person</span><span>Desarrollador</span></a></li>
+        <li><a href="/plataforma/html"><span class="material-symbols-outlined">explore</span><span>Plataforma</span></a></li>
+        <li><a href="/logout"><span class="material-symbols-outlined">logout</span><span>Salir</span></a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="form-box">
+        <h1>Crear Nuevo Editor</h1>
+
+        <div id="mensajeBox" class="mensaje-box" style="display:none;">
+            <span id="mensajeError" class="mensaje-error"></span>
+            <span id="mensajeExito" class="mensaje-exito"></span>
+            <button id="cerrarMensaje" class="cerrar-mensaje" aria-label="Cerrar mensaje">×</button>
+        </div>
+
+        <form id="formCrearEditor">
+            <label for="nombre">Nombre del editor:</label><br />
+            <input type="text" id="nombre" name="nombre" required /><br /><br />
+            <button type="submit">Guardar</button>
+        </form>
+        <br />
+    </div>
+</div>
+
+<a class="volverb" href="/editor/html">Volver</a>
+
+<script src="/static/scriptEditor.js" defer></script>
+
+</body>
+</html>

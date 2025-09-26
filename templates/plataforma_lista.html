@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="/static/stylemenu.css">
+</head>
+<body>
+
+    <div class="menu">
+        <ul class="menu-content">
+            <li><a href="/menu"><span class="material-symbols-outlined">home</span><span>Inicio</span></a></li>
+            <li><a href="/templates/videojuego_lista.html"><span class="material-symbols-outlined">dashboard</span><span>Videojuegos</span></a></li>
+            <li><a href="/generos/html"><span class="material-symbols-outlined">explore</span><span>Genero</span></a></li>
+            <li><a href="/editor/html"><span class="material-symbols-outlined">analytics</span><span>Editor</span></a></li>
+            <li><a href="/desarrollador/html"><span class="material-symbols-outlined">person</span><span>Desarrollador</span></a></li>
+            <li><a href="/plataforma/html"><span class="material-symbols-outlined">explore</span><span>Plataforma</span></a></li>
+            <li><a href="/logout"><span class="material-symbols-outlined">logout</span><span>Salir</span></a></li>
+        </ul>
+    </div>
+
+
+        <div class="form-box">
+<div class="header-container">
+  <h1>Lista de Plataforma</h1>
+  <a href="/templates/plataforma_crear.html" class="btn-crear-genero">Crear nueva Plataforma</a>
+</div></h1 >
+     
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>{{.ID}}</td>
+                <td>{{.Nombre}}</td>
+                <td>
+                    <form action="/Plataforma/eliminar" method="POST" onsubmit="return confirm('Al eliminar esta platafoma, también se eliminarán todos los videojuegos asociados. ¿Estás seguro de continuar?');">
+                        <input type="hidden" name="id" value="{{.ID}}">
+                        <button type="submit">Eliminar</button >
+                    </form > 
+                    
+                </td>
+            </tr >
+            
+            <tr>
+                <td colspan="3" class="no-data">No hay géneros registrados.</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+    <a class="volverb" href="/menu">Volver al menú</a>
+<script src="/static/scriptPlataforma.js" defer></script>
+
+</body>

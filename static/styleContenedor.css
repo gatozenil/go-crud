@@ -1,0 +1,102 @@
+
+.form-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.form-box th,
+.form-box td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.form-box th {
+    background-color: #f7f7f7;
+}
+
+.form-box tr:hover {
+    background-color: #f1f1f1;
+}
+
+.form-box .no-data {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+
+.form-box {
+    max-width: 900px;
+    margin: 80px auto; /* Centra vertical y horizontal */
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-box button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form-box button:hover {
+    background-color: #45a049;
+}
+
+.form-box a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f7f7f7;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
