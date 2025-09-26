@@ -9,7 +9,7 @@ import (
 	"text/template"
 	"time"
 
-	models "github.com/gatozenil/go-crud/Models"
+	models "github.com/gatozenil/go-crud/models"
 )
 
 var tmpl *template.Template
