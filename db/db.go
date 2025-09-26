@@ -1,7 +1,8 @@
 package db
 
 import (
-	models "CRUD/Models"
+	models "github.com/gatozenil/go-crud/Models"
+
 	"database/sql"
 	"log"
 	"os"

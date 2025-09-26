@@ -8,8 +8,9 @@ import (
 	"os"
 	"text/template"
 
-	"CRUD/db"
-	handlers "CRUD/handlers"
+	"github.com/gatozenil/go-crud/db"
+
+	handlers "github.com/gatozenil/go-crud/handlers"
 )
 
 func main() {

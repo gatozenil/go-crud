@@ -1,13 +1,15 @@
 package handlers
 
 import (
-	models "CRUD/Models"
-	"CRUD/db"
+	"github.com/gatozenil/go-crud/db"
+
 	"encoding/json"
 	"net/http"
 	"strconv"
 	"text/template"
 	"time"
+
+	models "github.com/gatozenil/go-crud/Models"
 )
 
 var tmpl *template.Template
